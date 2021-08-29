@@ -1,0 +1,23 @@
+{
+  "name": "clase-15",
+  "version": "1.0.0",
+  "description": "Proyecto CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "node-sass --watch sass/estilos.scss css/estilos.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeC05/CoderProject.git"
+  },
+  "author": "Jorge Cortes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeC05/CoderProject/issues"
+  },
+  "homepage": "https://github.com/JorgeC05/CoderProject#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

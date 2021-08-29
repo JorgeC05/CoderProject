@@ -50,10 +50,12 @@ a {
 .carousel-item img {
   height: 30vh;
   object-fit: cover; }
+
 @media only screen and (min-width: 700px) {
   .carousel-item img {
     height: 60vh;
     object-fit: cover; } }
+
 @media only screen and (min-width: 1000px) {
   .carousel-item img {
     height: 90vh;
@@ -71,6 +73,7 @@ a {
   width: 100%;
   object-fit: cover;
   margin-bottom: 10px; }
+
 @media only screen and (min-width: 700px) {
   .galeriaImagenes {
     display: grid;
@@ -89,6 +92,7 @@ a {
         grid-column: span 2; }
       .galeriaImagenes img:nth-child(6) {
         grid-column: span 2; } }
+
 @media only screen and (min-width: 1000px) {
   .galeriaImagenes {
     width: 90%;
@@ -159,13 +163,10 @@ span {
 @media only screen and (min-width: 1000px) {
   .descubre {
     height: 90vh; }
-
   .segmento__contenedor {
     height: 90%; }
-
   .segmento__imagen {
     height: 500px; }
-
   .pageNotFound__card {
     width: 90%;
     height: 60%;
@@ -174,26 +175,23 @@ span {
     align-items: center;
     top: 160px;
     left: 55px; }
-
   .pageNotFound__video {
     height: 99vh; }
-
   .card__img {
     width: 45%;
     height: 450px; }
     .card__img img {
       height: 450px; }
-
   .card__content {
     width: 55%;
     padding: 5px; }
-
   .center-absolute {
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; } }
+
 i.facebook {
   color: #00acee;
   font-size: 32px; }
@@ -209,5 +207,3 @@ i.github {
 i.whatsapp {
   color: #00bb2d;
   font-size: 32px; }
-
-/*# sourceMappingURL=estilos.css.map */
