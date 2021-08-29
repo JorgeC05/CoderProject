@@ -1,0 +1,167 @@
+@import 'utils/variables';
+@import 'utils/rewriteBootstrap';
+@import 'utils/extends';
+@import 'utils/mixins';
+
+
+a{
+    text-decoration: none;
+}
+
+#descubre, #planes, #nosotros{
+    @extend .size;
+}
+
+.redesSociales__lista{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redesSociales__logo{
+    list-style: none;
+    margin: 0 15px;
+    padding-bottom: 20px
+}
+
+.segmento__titulo {
+    color: $primary-color;
+    .badge{
+        font-size: $size * 0.75;
+        position: absolute;
+        top: $size * 0.625;
+    }
+} 
+
+.carousel-item {
+    @include slider(0);
+    @include slider(700px);
+    @include slider(1000px);
+} 
+
+.sectionPoint{
+    background-color: $secondary-color;
+    margin: {
+        top: $size * 1.25;
+        bottom: $size * 1.25;
+    }    
+    height: $size * 4.375;
+    h2{
+        line-height: $size * 4.375;
+    }
+}
+
+.galeriaImagenes {
+    @include gallery(0);
+    @include gallery(700px);
+    @include gallery(1000px);
+} 
+
+// 404 Page
+
+.pageNotFound__video{
+    object-fit: cover;
+    width: 100%;
+    height: 150vh;
+}
+
+.pageNotFound__card{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70px ;
+    left: 10px;
+}
+
+.card__img{
+    width: 60%;
+    height: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+.card__tittle, .card__info, h1{
+    color: white;
+    text-align: center;
+}
+
+.card__tittle{
+    font-size: 32px;
+    margin-bottom: 20px;
+    background-color: rgba($color: #000000, $alpha: .50);
+}
+.card__info{
+    font-size: 16px;
+}
+
+.center-absolute{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    text-transform: uppercase;
+}
+
+
+// fin 404 page
+
+@media only screen and (min-width: 1000px) {
+    .descubre{
+        height: 90vh;
+    } 
+    .segmento__contenedor{
+        height: 90%;
+    }
+    .segmento__imagen{
+        height: 500px;
+    }
+    .pageNotFound__card{
+        width: 90%;
+        height: 60%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        top: 160px ;
+        left: 55px;
+    }
+    .pageNotFound__video{
+        height: 99vh;
+    }
+    .card__img{
+        width: 45%;
+        height: 450px;
+        img{
+            height: 450px;
+        }
+    }
+    .card__content{
+        width: 55%;
+        padding: 5px;
+    }
+    .center-absolute{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+@each $icon, $back in $icons{
+    i.#{$icon}{
+        color: $back;
+        font-size: $size * 2;
+
+    }
+}
+

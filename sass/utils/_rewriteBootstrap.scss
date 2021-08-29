@@ -1,0 +1,27 @@
+@import 'mixins';
+
+// Reescribiendo colores de bootstrap
+.bg-dark{
+    background-color: $primary-color !important;
+}
+.btn-outline-success{
+    color: $secondary-color ;
+    border-color: $secondary-color;
+}
+.btn-primary{
+    @include color($primary-letter-color,$primary-color,$primary-color);
+}
+.btn-success{
+    @include color($primary-color,$secondary-color,$secondary-color);
+    
+}
+.btn-danger{
+    color: $secondary-letter-color;
+    background-color: transparent !important;
+    border-color: $secondary-color !important;
+}
+.bg-primary{
+    background-color: $primary-color !important;
+}
+
+// Fin de Reescribiendo colores de Bootstrap

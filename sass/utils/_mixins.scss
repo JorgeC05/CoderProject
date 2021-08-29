@@ -1,0 +1,92 @@
+@mixin color ($letterColor, $bgColor, $borderColor) {
+    color: $letterColor;
+    background-color: $bgColor;
+    border-color: $borderColor;    
+}
+
+@mixin imagenes ($altura){
+    img{
+        height: $altura;
+        object-fit: cover;
+    }
+}
+
+@mixin slider ($breackpoint) {
+    @if($breackpoint == 700px){
+        @media only screen and (min-width: $breackpoint){
+            @include imagenes(60vh);
+        }
+    }@else if($breackpoint == 1000px){
+        @media only screen and (min-width: $breackpoint){
+            @include imagenes(90vh);
+        }
+    }@else{
+        @include imagenes(30vh);
+    }
+}
+
+@mixin gallery ($breackpoint) {
+    @if($breackpoint == 700px){
+        @media only screen and (min-width: $breackpoint){
+            display: grid;
+            column-gap: 6px;
+            row-gap: 6px;
+            grid-template-columns: repeat(4,1fr);
+            align-items: stretch;
+            img{
+                margin-bottom: 0;
+                &:hover{        
+                    transform: scale(1.2,1.1);
+                }
+                &:nth-child(2){
+                    grid-column: span 3;
+                    grid-row: span 3;
+                }
+                &:nth-child(5){
+                    grid-column: span 2;
+                }
+                &:nth-child(6){
+                    grid-column: span 2;
+                }
+            }
+        }
+    }@else if($breackpoint == 1000px){
+        @media only screen and (min-width: $breackpoint){
+            width: 90%;
+            margin-top: 50px;
+            display: grid;
+            column-gap: 10px;
+            row-gap: 10px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2, 1fr);
+            img{
+                width: 100%;
+                height: 300px;
+                margin-bottom: 0;
+                transition: all 2s;
+                &:hover{
+                    transform: rotateY(180deg);
+                }
+                &:nth-child(2){
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+                &:nth-child(5){
+                    grid-column: span 1;
+                }
+                &:nth-child(6){
+                    grid-column: span 1;
+                }
+            }
+        }
+    }@else{
+        img{
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
