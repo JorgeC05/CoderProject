@@ -66,22 +66,22 @@
         <section>
             <div class="row">
                 <div class="col-md-8 col-lg-6 container mt-5">
-                    <form action="" class="container border border-secundary p-3 formulario">
+                    <form action="" class="container border border-secundary p-3 formulario" autocomplete="off">
                         <div class="mb-3 form-group">
                             <label for="nombre" class="form-label formulario__descripcion">Nombre</label>
-                            <input type="text" name="nombre" class="form-control formulario__tipo" required>
+                            <input type="text" name="nombre" class="form-control formulario__tipo form_custom" required>
                         </div>
                         <div class="mb-3 form-group">
                             <label for="apellido" class="form-label formulario__descripcion">Apellido</label>
-                            <input type="text" name="apellido" class="form-control formulario__tipo" required>
+                            <input type="text" name="apellido" class="form-control formulario__tipo form_custom" required>
                         </div>
                         <div class="mb-3 form-group">
                             <label for="email" class="form-label formulario__descripcion">Email</label>      
-                            <input type="email" name="email" class="form-control formulario__tipo" required>
+                            <input type="email" name="email" class="form-control formulario__tipo form_custom" required>
                         </div>
                         <div class="mb-3 form-group">
                             <label for="estado" class="form-label formulario__descripcion">Estado civil:</label>
-                            <select name="estado" id="estado" class="form-control formulario__tipo" required>
+                            <select name="estado" id="estado" class="form-control formulario__tipo form_custom" required>
                                 <option value="soltero" selected >Soltero/a</option>
                                 <option value="casado">Casado/a</option>
                                 <option value="divorsiado">Divorsiado/a</option>
@@ -94,7 +94,7 @@
                         </div>
                         <div class="mb-3 form-group">
                             <label for="comentarios" class="form-label formulario__descripcion">Deja tus comentarios</label>        
-                            <textarea name="comentarios" class="form-control formulario__tipo" id="comentarios"  rows="5" placeholder="tus comentarios aquí"></textarea>
+                            <textarea name="comentarios" class="form-control formulario__tipo form_custom" id="comentarios"  rows="5" placeholder="tus comentarios aquí"></textarea>
                         </div>
         
                         <input type="reset" value="Borrar Formulario" class="btn btn-danger mb-3 formulario__tipo">

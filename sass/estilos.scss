@@ -180,4 +180,35 @@ span{
     }
 }
 
+.form_custom{
+    border: none;
+    border-radius: 0;
+    outline: none;
+    border-bottom: 2px solid tomato;
 
+}
+
+input[type="text"]:focus, input[type="email"]:focus{   
+    background-color: rgba($primary-color, .6);
+    outline: none;
+    border-color: inherit;
+    box-shadow: none;
+}
+
+.btn-danger:hover{
+    color: tomato;
+}
+
+.animated{
+
+    animation: letter .5s alternate infinite ease-in;
+}
+
+@keyframes letter {
+    0%{
+        letter-spacing: 1px;
+    }
+    100%{
+        letter-spacing: 0;
+    }    
+}
