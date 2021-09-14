@@ -21,7 +21,7 @@
             @include imagenes(90vh);
         }
     }@else{
-        @include imagenes(30vh);
+        @include imagenes(50vh);
     }
 }
 
