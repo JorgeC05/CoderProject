@@ -21,6 +21,17 @@ a{
     padding: 0;
     display: flex;
     justify-content: center;
+    animation: bounce .5s alternate infinite ease-in;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+    
 }
 
 .redesSociales__logo{
@@ -168,4 +179,5 @@ span{
 
     }
 }
+
 

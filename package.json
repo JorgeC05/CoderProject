@@ -19,5 +19,6 @@
   "homepage": "https://github.com/JorgeC05/CoderProject#readme",
   "devDependencies": {
     "node-sass": "^6.0.1"
-  }
+  },
+  "dependencies": {}
 }
