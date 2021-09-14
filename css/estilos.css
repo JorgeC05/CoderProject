@@ -26,6 +26,9 @@
 .size, #descubre, #planes, #nosotros {
   height: 40px; }
 
+body {
+  overflow-x: hidden; }
+
 a {
   text-decoration: none; }
 

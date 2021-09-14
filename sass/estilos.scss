@@ -4,6 +4,10 @@
 @import 'utils/mixins';
 
 // estilos con sass
+body{
+    overflow-x: hidden;
+}
+
 a{
     text-decoration: none;
 }
